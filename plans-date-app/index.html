@@ -4,28 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+
     <!--- Tailwind CSS & Daisy UI CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.18.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.18.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="heart-icon.ico">
     <title>The Dating Plan With qchiii 💝</title>
 </head>
 
 <body>
-    
     <div class="container">
         <header>
             <h1>The Dating Plan With qchiii 💝</h1>
-            <!-- Error message -->
+            <h2>Bạn muốn đi đâu với mình nhỉ</h2>
+
+            <!-- Error message when user didnot enter activity -->
             <div class="alert-message"></div>
+            
             <div class="input-section">
-                <input type="text" placeholder="Add an activity . . ." class="input input-bordered input-secondary w-full max-w-xs" />
-                <input type="text" placeholder="Add a location . . ." class="input input-bordered input-secondary w-full max-w-xs" />
-                <input type="datetime-local" class="input input-bordered input-secondary w-full max-w-xs schedule-date" />
+                <input type="text" placeholder="Add an activity . . ." class="input input-bordered input-secondary w-full max-w-xs activity-input-section " />
+                <input type="text" placeholder="Add a location . . ." class="input input-bordered input-secondary w-full max-w-xs location-input-section" />
+                <input type="datetime-local" class="input input-bordered input-secondary w-full max-w-xs time-input-section" />
                 <button class="btn btn-secondary add-activity-button"><i class="bx bx-plus bx-sm"></i></button>
             </div>
         </header>
@@ -56,7 +61,6 @@
             </thead>
             <tbody class="activities-list-body"></tbody>
         </table>
-
     </div>
 
     <!--Theme switcher-->
@@ -69,14 +73,9 @@
                 <li class="theme-item" theme="cupcake"><a>cupcake</a></li>
                 <li class="theme-item" theme="dark"><a>dark</a></li>
                 <li class="theme-item" theme="light"><a>light</a></li>
-                <li class="theme-item" theme="bumblebee"><a>bumblebee</a></li>
-                <li class="theme-item" theme="synthwave"><a>synthwave</a></li>
-                <li class="theme-item" theme="halloween"><a>halloween</a></li>
-                <li class="theme-item" theme="fantasy"><a>fantasy</a></li>
-                <li class="theme-item" theme="dracula"><a>dracula</a></li>
-                <li class="theme-item" theme="aqua"><a>aqua</a></li>
-                <li class="theme-item" theme="luxury"><a>luxury</a></li>
-                <li class="theme-item" theme="night"><a>night</a></li>
+                <li class="theme-item" theme="valentine"><a>valentine</a></li>
+                <li class="theme-item" theme="sunset"><a>sunset</a></li>
+                <li class="theme-item" theme="pastel"><a>pastel</a></li>
             </ol>
         </div>
 
